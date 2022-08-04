@@ -37,7 +37,7 @@ export default function StartMenu({ handleStartGame }) {
           className="option option--lizard"
         >
           <img
-            src={process.env.PUBLIC_URL + "./assets/icon-lizard.svg"}
+            src={process.env.PUBLIC_URL + "/assets/icon-lizard.svg"}
             alt="Lizard Icon"
             className="option__icon option__icon--lizard"
           />
@@ -48,7 +48,7 @@ export default function StartMenu({ handleStartGame }) {
           className="option option--paper"
         >
           <img
-            src={process.env.PUBLIC_URL + "./assets/icon-paper.svg"}
+            src={process.env.PUBLIC_URL + "/assets/icon-paper.svg"}
             alt="Paper Icon"
             className="option__icon option__icon--paper"
           />
@@ -59,7 +59,7 @@ export default function StartMenu({ handleStartGame }) {
           className="option option--rock"
         >
           <img
-            src={process.env.PUBLIC_URL + "./assets/icon-rock.svg"}
+            src={process.env.PUBLIC_URL + "/assets/icon-rock.svg"}
             alt="Rock Icon"
             className="option__icon option__icon--rock"
           />
@@ -70,7 +70,7 @@ export default function StartMenu({ handleStartGame }) {
           className="option option--scissors"
         >
           <img
-            src={process.env.PUBLIC_URL + "./assets/icon-scissors.svg"}
+            src={process.env.PUBLIC_URL + "/assets/icon-scissors.svg"}
             alt="Scissors Icon"
             className="option__icon option__icon--scissors"
           />
@@ -81,7 +81,7 @@ export default function StartMenu({ handleStartGame }) {
           className="option option--spock"
         >
           <img
-            src={process.env.PUBLIC_URL + "./assets/icon-spock.svg"}
+            src={process.env.PUBLIC_URL + "/assets/icon-spock.svg"}
             alt="Spock Icon"
             className="option__icon option__icon--spock"
           />
