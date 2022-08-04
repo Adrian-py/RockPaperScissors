@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  padding-top: 6vh;
+  background: var(--background);
+  overflow: hidden;
+}
+
+.out {
+  position: absolute;
+  left: -1000px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

@@ -1,0 +1,238 @@
+@use "../utils/breakpoints.scss" as *;
+
+.menu {
+  &__end {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 50vw;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include breakpoint("SDesktop") {
+      max-width: 100vw;
+    }
+
+    @include breakpoint("tablet") {
+      transform: translate(-50%, -70%);
+      gap: 7.5vw;
+    }
+
+    @include breakpoint("phone") {
+      transform: translate(-50%, -80%);
+      height: 50%;
+      gap: 10vw;
+    }
+  }
+}
+
+.choice {
+  position: relative;
+  height: 125%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  @include breakpoint("SDesktop") {
+    height: 110%;
+  }
+
+  @include breakpoint("tablet") {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  &__text {
+    font-size: 2.6rem;
+    color: var(--white);
+    white-space: nowrap;
+
+    @include breakpoint("tablet") {
+      font-size: 2rem;
+    }
+
+    @include breakpoint("phone") {
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    height: 40vh;
+    aspect-ratio: 1/1;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px -7px 0px 0px rgba(59, 67, 99, 0.39) inset;
+    -webkit-box-shadow: 1px -7px 0px 0px rgba(59, 67, 99, 0.39) inset;
+    -moz-box-shadow: 1px -7px 0px 0px rgba(59, 67, 99, 0.39) inset;
+
+    @include breakpoint("tablet") {
+      height: 24vh;
+    }
+
+    @include breakpoint("phone") {
+      height: 18vh;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 75%;
+      aspect-ratio: 1/1;
+      background: white;
+      border-radius: 50%;
+      box-shadow: -1px 8px 0px 0px rgba(59, 67, 99, 0.2) inset;
+      -webkit-box-shadow: -1px 8px 0px 0px rgba(59, 67, 99, 0.2) inset;
+      -moz-box-shadow: -1px 8px 0px 0px rgba(59, 67, 99, 0.2) inset;
+    }
+
+    &--scissors {
+      background: var(--scissorsGradient);
+    }
+
+    &--paper {
+      background: var(--paperGradient);
+    }
+
+    &--spock {
+      background: var(--spockGradient);
+    }
+
+    &--lizard {
+      background: var(--lizardGradient);
+    }
+
+    &--rock {
+      background: var(--rockGradient);
+    }
+  }
+
+  &__icon {
+    height: 40%;
+    z-index: 1;
+  }
+
+  &__empty {
+    position: absolute;
+    top: 27.4%;
+    height: 30vh;
+    aspect-ratio: 1/1;
+    background: var(--houseLoader);
+    border-radius: 50%;
+    z-index: -1;
+
+    @include breakpoint("SDesktop") {
+      height: 20vh;
+    }
+
+    @include breakpoint("phone") {
+      top: 20%;
+      height: 12vh;
+    }
+  }
+}
+
+.highlights {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: -1;
+
+  &__highlight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    z-index: -1;
+
+    &--one {
+      min-width: 140%;
+      background-color: rgba(255, 255, 255, 0.025);
+    }
+
+    &--two {
+      min-width: 185%;
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    &--three {
+      min-width: 220%;
+      background-color: rgba(255, 255, 255, 0.015);
+    }
+  }
+}
+
+.result {
+  position: relative;
+  top: 2vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  gap: 1vh;
+  z-index: 1;
+
+  @include breakpoint("tablet") {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include breakpoint("phone") {
+    top: 135%;
+  }
+
+  &__title {
+    font-size: 3.75rem;
+    color: var(--white);
+    white-space: nowrap;
+
+    @include breakpoint("phone") {
+      font-size: 3.25rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 1.5vh 0;
+    font-size: 1.4rem;
+    color: var(--dark);
+    background: var(--white);
+    border: none;
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+    @include breakpoint("LDesktop") {
+      font-size: 1.1rem;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}

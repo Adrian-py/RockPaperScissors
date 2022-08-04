@@ -1,0 +1,97 @@
+@use "../utils/breakpoints.scss" as *;
+
+.header {
+  width: 60%;
+  height: 20vh;
+  margin: auto;
+  padding: 2.25vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid var(--light);
+  border-radius: 20px;
+
+  @include breakpoint("MDesktop") {
+    height: 22vh;
+  }
+
+  @include breakpoint("SDesktop") {
+    width: 80%;
+  }
+
+  @include breakpoint("tablet") {
+    height: 16vh;
+    padding: 1.5vh 2vw;
+    padding-left: 5vw;
+  }
+
+  @include breakpoint("phone") {
+    height: 15vh;
+    border-radius: 8px;
+  }
+
+  &__logo {
+    @include breakpoint("tablet") {
+      height: 80%;
+    }
+  }
+}
+
+.score {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 10px;
+
+  @include breakpoint("tablet") {
+    width: 25%;
+  }
+
+  @include breakpoint("SDesktop") {
+    width: 30%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--scoreText);
+
+    @include breakpoint("LDesktop") {
+      font-size: 1.3rem;
+    }
+
+    @include breakpoint("MDesktop") {
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint("tablet") {
+      font-size: 1rem;
+    }
+
+    @include breakpoint("phone") {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__text {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--dark);
+
+    @include breakpoint("MDesktop") {
+      font-size: 4.25rem;
+    }
+
+    @include breakpoint("tablet") {
+      font-size: 4rem;
+    }
+
+    @include breakpoint("phone") {
+      font-size: 2rem;
+    }
+  }
+}
