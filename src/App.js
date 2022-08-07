@@ -38,7 +38,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <main className="App">
       <Header currentScore={currentScore} />
       <div className="menu">
         {gameStarted ? (
@@ -53,7 +53,7 @@ function App() {
         )}
       </div>
       <Rules />
-    </div>
+    </main>
   );
 }
 
