@@ -10,7 +10,7 @@ To run the project, you can run the script
 
 ### `npm start`
 
-Will run the app in the development mode
+Will run the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will auto-reload whenever you make changes or when you save.
