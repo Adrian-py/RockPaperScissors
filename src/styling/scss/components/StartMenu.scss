@@ -9,6 +9,10 @@
     margin-top: 3vh;
   }
 
+  @include breakpoint("MDesktop") {
+    margin-top: 5vh;
+  }
+
   @include breakpoint("SDesktop") {
     height: 50vh;
   }

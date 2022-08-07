@@ -2,7 +2,7 @@
 
 .header {
   width: 60%;
-  height: 20vh;
+  // height: 20vh;
   margin: auto;
   padding: 2.25vh 2vw;
   display: flex;
@@ -12,7 +12,6 @@
   border-radius: 20px;
 
   @include breakpoint("MDesktop") {
-    height: 22vh;
   }
 
   @include breakpoint("SDesktop") {
@@ -20,19 +19,17 @@
   }
 
   @include breakpoint("tablet") {
-    height: 16vh;
     padding: 1.5vh 2vw;
     padding-left: 5vw;
   }
 
   @include breakpoint("phone") {
-    height: 15vh;
     border-radius: 8px;
   }
 
   &__logo {
     @include breakpoint("tablet") {
-      height: 80%;
+      height: 10vh;
     }
   }
 }
@@ -40,6 +37,7 @@
 .score {
   width: 22%;
   height: 100%;
+  padding: 1vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +59,11 @@
     color: var(--scoreText);
 
     @include breakpoint("LDesktop") {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
     }
 
     @include breakpoint("MDesktop") {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     @include breakpoint("tablet") {

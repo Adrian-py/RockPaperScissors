@@ -58,7 +58,6 @@ export default function StartMenu({ handleStartGame }) {
           data-option="rock"
           className="option option--rock"
         >
-          a
           <img
             src={process.env.PUBLIC_URL + "/assets/icon-rock.svg"}
             alt="Rock Icon"

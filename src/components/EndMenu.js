@@ -141,7 +141,7 @@ export default function EndMenu({
 
   // Display choice icon
   function handleChoiceDisplay(choice) {
-    return "./assets/icon-" + choice + ".svg";
+    return process.env.PUBLIC_URL + "/assets/icon-" + choice + ".svg";
   }
 
   // Changing border color based on choice
