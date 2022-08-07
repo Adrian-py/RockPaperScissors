@@ -38,9 +38,9 @@ function App() {
   }, []);
 
   return (
-    <main className="App">
+    <div className="App">
       <Header currentScore={currentScore} />
-      <div className="menu">
+      <main className="menu">
         {gameStarted ? (
           <EndMenu
             usersChoice={usersChoice}
@@ -51,9 +51,9 @@ function App() {
         ) : (
           <StartMenu handleStartGame={handleStartGame} />
         )}
-      </div>
+      </main>
       <Rules />
-    </main>
+    </div>
   );
 }
 
